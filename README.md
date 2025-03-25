@@ -4,4 +4,5 @@ DWM Practical Aims:
 3. To understand and implement OLAP operations on a multi-dimensional data cube.
 4. To treat missing values with different techniques in Python
 5. To perform EDA on the given dataset
-6. 
+6. To implement various data flow transformations that are commonly used in ETL Processes
+7. To implement Apriori Algorithm
