@@ -6,3 +6,4 @@ DWM Practical Aims:
 5. To perform EDA on the given dataset
 6. To implement various data flow transformations that are commonly used in ETL Processes
 7. To implement Apriori Algorithm
+8. Naive Bayes 
