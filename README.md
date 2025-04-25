@@ -12,6 +12,25 @@
 11. To implement Decision Tree Algorithm
 12. To implement Linear Regression Algorithm
 ---
+## 🔢 Practical Aims Overview
+
+| 🔢 No. | 🧪 Practical Aim                  | 📝 Description                                                            |
+|-------|----------------------------------|---------------------------------------------------------------------------|
+| 1️⃣    | Study Weka & Create ARFF         | Understand the Weka tool and how to create `.arff` files used for data mining tasks. |
+| 2️⃣    | Missing Values in Weka           | Learn how to treat missing data using Weka’s built-in filters and preprocessing tools. |
+| 3️⃣    | OLAP Operations                  | Explore Roll-up, Drill-down, Slice, Dice, and Pivot on multidimensional data cubes. |
+| 4️⃣    | Handle Missing Values in Python  | Use Python to treat missing values using various imputation techniques.   |
+| 5️⃣    | Exploratory Data Analysis (EDA)  | Visualize and summarize datasets using Python's EDA techniques.           |
+| 6️⃣    | ETL Data Flow Transformations    | Implement Extract, Transform, Load (ETL) concepts using basic transformation steps. |
+| 7️⃣    | Apriori Algorithm                | Discover frequent itemsets and generate association rules.                |
+| 8️⃣    | Naive Bayes Algorithm            | Build a probabilistic classifier based on Bayes' Theorem.                 |
+| 9️⃣    | K-Nearest Neighbors              | Classify data points based on their similarity to neighbors.              |
+| 🔟     | K-Means Clustering               | Group data points into K distinct clusters.                               |
+| 1️⃣1️⃣  | Decision Tree Algorithm          | Classify data by learning decision rules from features.                   |
+| 1️⃣2️⃣  | Linear Regression                | Predict continuous outcomes based on linear relationships.                |
+
+---
+
 ## 1. 📁 Weka & ARFF File Creation
 ### Steps:
 Open Weka GUI.
