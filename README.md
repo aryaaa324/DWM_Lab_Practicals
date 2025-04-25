@@ -73,6 +73,7 @@ Forward/Backward fill – df.fillna(method='ffill')
 ->Handle skewness, missing values
 ->Visualize distributions using matplotlib, seaborn
 
+---
 ## 6. 🔄 ETL Data Flow Transformations
 ### Common Transformations:
 Filtering – Removing unwanted rows/columns.
@@ -82,6 +83,7 @@ Sorting & Ordering – For cleaner visual flow.
 Data Type Conversion – e.g., string to datetime.
 Standardization/Normalization – For scaling features.
 
+---
 ## 7. 🛒 Apriori Algorithm
 ### Steps:
 ->Set minimum support and confidence thresholds.
@@ -92,6 +94,7 @@ Standardization/Normalization – For scaling features.
 ->For each frequent itemset, create rules.
 ->Retain rules that meet confidence threshold.
 
+---
 ## 8. 🎯 Naive Bayes Algorithm
 ### Steps:
 ->Calculate prior probability for each class.
@@ -99,6 +102,7 @@ Standardization/Normalization – For scaling features.
 -> Apply Bayes Theorem to compute posterior: P(class | features) ∝ P(class) * P(features | class)
 -> Assign class with the highest posterior.
 
+---
 ## 9. 🧍‍♂️ K-Nearest Neighbors (KNN)
 ### Steps:
 ->Choose K (number of neighbors).
@@ -108,6 +112,7 @@ Standardization/Normalization – For scaling features.
 ->For regression: average of K neighbors.
 ->Predict the result accordingly.
 
+---
 ## 10. 🔵 K-Means Clustering
 ### Steps:
 ->Choose number of clusters K.
@@ -116,6 +121,7 @@ Standardization/Normalization – For scaling features.
 ->Update centroid: mean of points in each cluster.
 ->Repeat until centroids stabilize (convergence).
 
+---
 ## 11. 🌳 Decision Tree Algorithm
 ### Steps:
 ->Start with the entire dataset.
@@ -129,6 +135,7 @@ Stop when:
 ->Max depth reached, or
 ->No gain possible.
 
+---
 ## 12. 📈 Linear Regression
 ### Steps:
 -> Assume a linear relationship: Y = mX + c
