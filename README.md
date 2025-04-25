@@ -1,17 +1,36 @@
-# DWM Practical Aims:
-1. To Study Data mining tool Weka and create new ARFF File.
-2. To perform treatment of Missing Values of the attributes in Weka.
-3. To understand and implement OLAP operations on a multi-dimensional data cube.
-4. To treat missing values with different techniques in Python
-5. To perform EDA on the given dataset
-6. To implement various data flow transformations that are commonly used in ETL Processes
-7. To implement Apriori Algorithm
-8. To implement Naive Bayes Algorithm
-9. To implement KNN Algorithm
-10. To implement K-means Algorithm
-11. To implement Decision Tree Algorithm
-12. To implement Linear Regression Algorithm
+# 🎯 Data Warehousing & Mining – Practical Aims
+
+This document outlines the key objectives of the practical sessions for the **Data Warehousing & Mining (DWM)** course. Each practical is designed to equip students with hands-on experience in data preprocessing, mining algorithms, and visualization techniques using tools like **Weka** and **Python**.
+
 ---
+
+### 🧪 Practical Aims:
+
+1. 📁 **Explore Weka and Create ARFF Files**  
+
+2. 🧼 **Handle Missing Values in Weka**  
+
+3. 📊 **Perform OLAP Operations on a Multidimensional Data Cube**  
+
+4. 🧹 **Treat Missing Values Using Python**  
+ 
+6. 🔄 **Implement ETL Data Flow Transformations**  
+
+7. 🛒 **Implement the Apriori Algorithm**  
+
+8. 📈 **Implement the Naive Bayes Algorithm**  
+
+9. 👥 **Implement the K-Nearest Neighbors (KNN) Algorithm**  
+
+10. 🔵 **Implement the K-Means Clustering Algorithm**  
+
+11. 🌳 **Implement the Decision Tree Algorithm**  
+
+12. 📉 **Implement the Linear Regression Algorithm**  
+   
+
+---
+
 ## 🔢 Practical Aims Overview
 
 | 🔢 No. | 🧪 Practical Aim                  | 📝 Description                                                            |
