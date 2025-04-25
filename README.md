@@ -31,162 +31,172 @@
 
 ---
 
-## 1. 📁 Weka & ARFF File Creation
+## 1. 📁 Weka & ARFF File Creation  
 **Definition**: Weka is a GUI-based data mining tool that supports tasks such as preprocessing, classification, regression, clustering, and visualization.
 
-💡 Goal: Learn how to define datasets in .arff (Attribute-Relation File Format).
+💡 **Goal**: Learn how to define datasets in `.arff` (Attribute-Relation File Format).
 
-### Steps:
-Open Weka GUI.
--> Choose Explorer → Click on Preprocess tab.
--> Use the "Open File" button to load a dataset or "Edit" to create a new one.
--> Save your dataset in ARFF format (.arff).
+### 🧭 Steps:
+1. Open **Weka GUI**  
+2. Choose **Explorer** → Click on **Preprocess** tab  
+3. Use the **"Open File"** button to load a dataset or **"Edit"** to create a new one  
+4. Save your dataset in **ARFF format (.arff)**  
 
-Understand the ARFF structure:
-@relation – dataset name.
-@attribute – features and their types.
-@data – actual data records.
-
----
-
-## 2. 🧩 Handling Missing Values in Weka
-**Definition** : Missing values occur when no data value is stored for a variable in an observation.
-
-🎯 Goal: Replace missing values using Weka's filters like:
-->Mean/Mode replacement
-->Custom value assignment
-
-### Steps:
--> Load the dataset with missing values in Weka.
--> Navigate to the Preprocess tab.
--> Use Filters > unsupervised > attribute > ReplaceMissingValues.
--> Apply the filter to replace missing data using default strategies (mean/mode).
--> Save the clean dataset.
+### 🏗️ ARFF Structure:
+- `@relation` – dataset name  
+- `@attribute` – features and their types  
+- `@data` – actual data records  
 
 ---
 
-## 3. 🧊 OLAP Operations
+## 2. 🧩 Handling Missing Values in Weka  
+**Definition**: Missing values occur when no data value is stored for a variable in an observation.
+
+🎯 **Goal**: Replace missing values using Weka's filters.
+
+### 🧭 Steps:
+1. Load the dataset with missing values in Weka  
+2. Navigate to the **Preprocess** tab  
+3. Use **Filters > unsupervised > attribute > ReplaceMissingValues**  
+4. Apply the filter to replace missing data using default strategies (mean/mode)  
+5. Save the cleaned dataset  
+
+---
+
+## 3. 🧊 OLAP Operations  
 **Definition**: OLAP (Online Analytical Processing) provides multidimensional analysis of business data and supports complex queries.
-### Key Operations:
-Roll-up: Aggregating data by climbing a concept hierarchy.
-Drill-down: Breaking data into finer levels.
-Slice: Selecting a single dimension.
-Dice: Selecting two or more dimensions.
-Pivot (Rotate): Reorienting the data cube view.
 
-Example:
-Cube: Sales data → Dimensions: Time, Product, Region
-Roll-up: Product level → Category
-Slice: Only 2023 data
-Dice: Only Electronics in Q1
+### 🛠️ Key Operations:
+- **Roll-up**: Aggregating data by climbing a concept hierarchy  
+- **Drill-down**: Breaking data into finer levels  
+- **Slice**: Selecting a single dimension  
+- **Dice**: Selecting two or more dimensions  
+- **Pivot (Rotate)**: Reorienting the data cube view  
 
-## 4. 🧼 Handling Missing Values in Python
-**Definition**: Python offers flexible techniques to clean and fill missing values programmatically.
-### Techniques:
--> Replacing missing values with mean, median and mode by computing strategy=mean/median/most_frequent
-
-Other Techniques: 
-Removing rows/columns – df.dropna()
-Replacing with mean/median/mode
-df.fillna(df.mean())
-Forward/Backward fill – df.fillna(method='ffill')
+📦 **Example**:  
+Cube: Sales data → Dimensions: Time, Product, Region  
+- Roll-up: Product level → Category  
+- Slice: Only 2023 data  
+- Dice: Only Electronics in Q1  
 
 ---
 
-## 5. 📊 Exploratory Data Analysis (EDA)
+## 4. 🧼 Handling Missing Values in Python  
+**Definition**: Python offers flexible techniques to clean and fill missing values programmatically.
+
+### 🔧 Techniques:
+- Replace missing values using **mean**, **median**, or **mode**  
+  - `df.fillna(df.mean())`, `df.fillna(df.median())`  
+- **Remove rows/columns**: `df.dropna()`  
+- **Forward/Backward Fill**: `df.fillna(method='ffill')`, `df.fillna(method='bfill')`  
+- **Custom imputation** based on domain knowledge  
+
+---
+
+## 5. 📊 Exploratory Data Analysis (EDA)  
 **Definition**: EDA is the process of examining datasets visually and statistically to discover patterns, spot anomalies, and test assumptions.
 
-### Steps:
-
-->Load dataset using pandas.
-->Understand structure – df.info(), df.describe()
-->Univariate analysis – Histograms, Countplots
-->Bivariate analysis – Scatter plots, Correlation matrix
-->Check for outliers – Boxplots
-->Handle skewness, missing values
-->Visualize distributions using matplotlib, seaborn
-
----
-## 6. 🔄 ETL Data Flow Transformations
-**Definition**: ETL stands for Extract, Transform, Load—a process used in data warehousing to prepare data.
-
-### Common Transformations:
-Filtering – Removing unwanted rows/columns.
-Aggregation – Summing, counting, averaging.
-Join/Merge – Combining multiple data sources.
-Sorting & Ordering – For cleaner visual flow.
-Data Type Conversion – e.g., string to datetime.
-Standardization/Normalization – For scaling features.
+### 🧭 Steps:
+1. Load dataset using `pandas`  
+2. Understand structure – `df.info()`, `df.describe()`  
+3. Univariate analysis – **Histograms**, **Countplots**  
+4. Bivariate analysis – **Scatter plots**, **Correlation matrix**  
+5. Check for outliers – **Boxplots**  
+6. Handle skewness and missing values  
+7. Visualize data using `matplotlib`, `seaborn`  
 
 ---
-## 7. 🛒 Apriori Algorithm
-**Definition**: An algorithm for mining frequent itemsets and learning association rules.
 
-### Steps:
-->Set minimum support and confidence thresholds.
-->Generate frequent itemsets:
-->Start with single items → prune low-support.
-->Combine to form pairs, triplets...
-->Generate association rules:
-->For each frequent itemset, create rules.
-->Retain rules that meet confidence threshold.
+## 6. 🔄 ETL Data Flow Transformations  
+**Definition**: ETL stands for **Extract, Transform, Load**—a process used in data warehousing to prepare and integrate data.
 
----
-## 8. 🎯 Naive Bayes Algorithm
-**Definition**: A probabilistic classifier based on Bayes' Theorem assuming feature independence.
-
-### Steps:
-->Calculate prior probability for each class.
-->For each feature, calculate likelihood: P(feature | class)
--> Apply Bayes Theorem to compute posterior: P(class | features) ∝ P(class) * P(features | class)
--> Assign class with the highest posterior.
+### 🔧 Common Transformations:
+- **Filtering** – Removing unnecessary rows/columns  
+- **Aggregation** – Summing, counting, averaging  
+- **Join/Merge** – Combining multiple datasets  
+- **Sorting & Ordering** – For clean visual output  
+- **Data Type Conversion** – e.g., string to datetime  
+- **Standardization/Normalization** – For feature scaling  
 
 ---
-## 9. 🧍‍♂️ K-Nearest Neighbors (KNN)
-**Definition**: A non-parametric method used for classification and regression.
 
-### Steps:
-->Choose K (number of neighbors).
-->Calculate distance (e.g., Euclidean) from the test point to all training points.
-->Select K nearest neighbors.
-->For classification: majority vote
-->For regression: average of K neighbors.
-->Predict the result accordingly.
+## 7. 🛒 Apriori Algorithm  
+**Definition**: An algorithm for mining frequent itemsets and generating association rules from transactional data.
 
----
-## 10. 🔵 K-Means Clustering
-**Definition**: An unsupervised algorithm that partitions data into K clusters.
-
-### Steps:
-->Choose number of clusters K.
-->Initialize K centroids randomly.
-->Assign each point to the nearest centroid.
-->Update centroid: mean of points in each cluster.
-->Repeat until centroids stabilize (convergence).
+### 🧭 Steps:
+1. Set **minimum support** and **confidence** thresholds  
+2. Generate frequent itemsets:  
+   - Start with single items  
+   - Prune low-support itemsets  
+   - Combine to form pairs, triplets...  
+3. Generate association rules:  
+   - Create rules from frequent itemsets  
+   - Retain those meeting the confidence threshold  
 
 ---
-## 11. 🌳 Decision Tree Algorithm
-**Definition**: A tree-like model used for decision-making and classification.
 
-### Steps:
-->Start with the entire dataset.
-->Select the best feature using:
-->Information Gain or Gini Index
-->Split the dataset based on feature values.
-->Repeat the process recursively on subsets.
+## 8. 🎯 Naive Bayes Algorithm  
+**Definition**: A probabilistic classifier based on **Bayes' Theorem**, assuming independence among features.
 
-Stop when:
-->All records belong to one class, or
-->Max depth reached, or
-->No gain possible.
+### 🧭 Steps:
+1. Calculate **prior probability** for each class  
+2. For each feature, compute **likelihood**: `P(feature | class)`  
+3. Apply **Bayes Theorem** to compute posterior:  
+   `P(class | features) ∝ P(class) * P(features | class)`  
+4. Predict class with **highest posterior probability**  
 
 ---
-## 12. 📈 Linear Regression
-**Definition**: A method to model the relationship between a dependent and one/more independent variables.
 
-### Steps:
--> Assume a linear relationship: Y = mX + c
-->Estimate coefficients m and c by minimizing the cost function (MSE).
-->Use Gradient Descent or Normal Equation for optimization.
-->Predict using the trained model:
-->Input feature → Output continuous value.
+## 9. 🧍‍♂️ K-Nearest Neighbors (KNN)  
+**Definition**: A non-parametric method used for classification and regression based on proximity.
+
+### 🧭 Steps:
+1. Choose value of **K** (number of neighbors)  
+2. Calculate **distance** (e.g., Euclidean) from the test point to all training points  
+3. Select the **K nearest neighbors**  
+4. For classification: use **majority vote**  
+5. For regression: take **average of K neighbors**  
+6. Predict the result accordingly  
+
+---
+
+## 10. 🔵 K-Means Clustering  
+**Definition**: An unsupervised learning algorithm that partitions data into **K distinct clusters**.
+
+### 🧭 Steps:
+1. Choose number of clusters **K**  
+2. Initialize **K centroids randomly**  
+3. Assign each point to the **nearest centroid**  
+4. Update centroids as the **mean of points in each cluster**  
+5. Repeat steps 3–4 until **centroids converge**  
+
+---
+
+## 11. 🌳 Decision Tree Algorithm  
+**Definition**: A tree-like model used for classification and decision-making based on features.
+
+### 🧭 Steps:
+1. Start with the **entire dataset**  
+2. Select the **best feature** to split using  
+   - **Information Gain** or  
+   - **Gini Index**  
+3. Split the dataset based on feature values  
+4. Repeat recursively for each child node  
+
+📌 **Stopping Criteria**:
+- All records belong to one class  
+- No further information gain  
+- Maximum depth is reached  
+
+---
+
+## 12. 📈 Linear Regression  
+**Definition**: A supervised learning algorithm to model the relationship between one or more independent variables and a dependent variable.
+
+### 🧭 Steps:
+1. Assume a linear model: `Y = mX + c`  
+2. Estimate coefficients **m** and **c** by minimizing **Mean Squared Error (MSE)**  
+3. Use **Gradient Descent** or **Normal Equation** for optimization  
+4. Predict using the trained model to output continuous values  
+
+---
