@@ -32,6 +32,10 @@
 ---
 
 ## 1. 📁 Weka & ARFF File Creation
+**Definition**: Weka is a GUI-based data mining tool that supports tasks such as preprocessing, classification, regression, clustering, and visualization.
+
+💡 Goal: Learn how to define datasets in .arff (Attribute-Relation File Format).
+
 ### Steps:
 Open Weka GUI.
 -> Choose Explorer → Click on Preprocess tab.
@@ -46,6 +50,12 @@ Understand the ARFF structure:
 ---
 
 ## 2. 🧩 Handling Missing Values in Weka
+**Definition** : Missing values occur when no data value is stored for a variable in an observation.
+
+🎯 Goal: Replace missing values using Weka's filters like:
+->Mean/Mode replacement
+->Custom value assignment
+
 ### Steps:
 -> Load the dataset with missing values in Weka.
 -> Navigate to the Preprocess tab.
@@ -56,6 +66,7 @@ Understand the ARFF structure:
 ---
 
 ## 3. 🧊 OLAP Operations
+**Definition**: OLAP (Online Analytical Processing) provides multidimensional analysis of business data and supports complex queries.
 ### Key Operations:
 Roll-up: Aggregating data by climbing a concept hierarchy.
 Drill-down: Breaking data into finer levels.
@@ -70,6 +81,7 @@ Slice: Only 2023 data
 Dice: Only Electronics in Q1
 
 ## 4. 🧼 Handling Missing Values in Python
+**Definition**: Python offers flexible techniques to clean and fill missing values programmatically.
 ### Techniques:
 -> Replacing missing values with mean, median and mode by computing strategy=mean/median/most_frequent
 
@@ -82,6 +94,8 @@ Forward/Backward fill – df.fillna(method='ffill')
 ---
 
 ## 5. 📊 Exploratory Data Analysis (EDA)
+**Definition**: EDA is the process of examining datasets visually and statistically to discover patterns, spot anomalies, and test assumptions.
+
 ### Steps:
 
 ->Load dataset using pandas.
@@ -94,6 +108,8 @@ Forward/Backward fill – df.fillna(method='ffill')
 
 ---
 ## 6. 🔄 ETL Data Flow Transformations
+**Definition**: ETL stands for Extract, Transform, Load—a process used in data warehousing to prepare data.
+
 ### Common Transformations:
 Filtering – Removing unwanted rows/columns.
 Aggregation – Summing, counting, averaging.
@@ -104,6 +120,8 @@ Standardization/Normalization – For scaling features.
 
 ---
 ## 7. 🛒 Apriori Algorithm
+**Definition**: An algorithm for mining frequent itemsets and learning association rules.
+
 ### Steps:
 ->Set minimum support and confidence thresholds.
 ->Generate frequent itemsets:
@@ -115,6 +133,8 @@ Standardization/Normalization – For scaling features.
 
 ---
 ## 8. 🎯 Naive Bayes Algorithm
+**Definition**: A probabilistic classifier based on Bayes' Theorem assuming feature independence.
+
 ### Steps:
 ->Calculate prior probability for each class.
 ->For each feature, calculate likelihood: P(feature | class)
@@ -123,6 +143,8 @@ Standardization/Normalization – For scaling features.
 
 ---
 ## 9. 🧍‍♂️ K-Nearest Neighbors (KNN)
+**Definition**: A non-parametric method used for classification and regression.
+
 ### Steps:
 ->Choose K (number of neighbors).
 ->Calculate distance (e.g., Euclidean) from the test point to all training points.
@@ -133,6 +155,8 @@ Standardization/Normalization – For scaling features.
 
 ---
 ## 10. 🔵 K-Means Clustering
+**Definition**: An unsupervised algorithm that partitions data into K clusters.
+
 ### Steps:
 ->Choose number of clusters K.
 ->Initialize K centroids randomly.
@@ -142,6 +166,8 @@ Standardization/Normalization – For scaling features.
 
 ---
 ## 11. 🌳 Decision Tree Algorithm
+**Definition**: A tree-like model used for decision-making and classification.
+
 ### Steps:
 ->Start with the entire dataset.
 ->Select the best feature using:
@@ -156,6 +182,8 @@ Stop when:
 
 ---
 ## 12. 📈 Linear Regression
+**Definition**: A method to model the relationship between a dependent and one/more independent variables.
+
 ### Steps:
 -> Assume a linear relationship: Y = mX + c
 ->Estimate coefficients m and c by minimizing the cost function (MSE).
