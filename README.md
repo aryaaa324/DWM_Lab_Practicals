@@ -12,7 +12,8 @@ This document outlines the key objectives of the practical sessions for the **Da
 
 3. 📊 **Perform OLAP Operations on a Multidimensional Data Cube**  
 
-4. 🧹 **Treat Missing Values Using Python**  
+4. 🧹 **Treat Missing Values Using Python**
+5.  **Implement EDA on a  Dataset**
  
 6. 🔄 **Implement ETL Data Flow Transformations**  
 
